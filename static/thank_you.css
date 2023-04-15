@@ -1,0 +1,32 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-image: url("images/thankyou.jpg");
+    background-size: 100%;
+    background-position: top 10%;
+    color: #daf1de;
+    height: 100vh;
+  }
+
+  h1 {
+    margin-left: 100px;
+    align-items: left;
+    margin-top: 310px;
+    color: #daf1de;
+  }
+  
+  button {
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #235347;
+    color: #8eb69b;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:#163832;
+  }

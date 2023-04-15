@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='friend_entry.css') }}" />
+    <title>Add Books</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Notes-Dark-Academia.jpeg') }}">
+  </head>
+  <body>
+
+    <h1>Books</h1>
+
+    <form method="POST" action="{{ url_for('index') }}">
+      <label>User Name:</label>
+      <input type="text" autocomplete="off" name="user_name"><br><br>
+      <label>Book Name:</label>
+      <input type="text" autocomplete="off" name="book_name"><br><br>
+      <label>Author Name:</label>
+      <input type="text" autocomplete="off" name="author_name"><br><br>
+      <label>Genre:</label>
+      <input type="text" autocomplete="off" name="genre"><br><br>
+      <label>Rating:</label>
+      <input type="text" autocomplete="off" name="rating"><br><br>
+      <div class="add_button">
+        <input type="submit" value ="Add Book">
+      </div>
+    </form>
+  </body>
+
+</html>

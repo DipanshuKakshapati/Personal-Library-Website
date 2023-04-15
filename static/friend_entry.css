@@ -1,0 +1,61 @@
+body {
+  font-family: "Times New Roman", serif;
+  background-image: url("images/friend\ entry.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #8eb69b;
+  padding: 30px;
+}
+
+h1 {
+  color: #8eb69b;
+  margin-left: 29%; /* Adjust this value to move the h1 more or less to the left */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-right: 50%;
+  background-color: #051f20;
+  border: 1px solid #051f20;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+input[type="text"] {
+  border: 1px solid  #8eb69b;
+  padding: 5px;
+  font-size: 16px;
+  background-color:  #8eb69b;
+  color: #051f20;
+  margin-top: 5px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #daf1de;
+}
+
+button {
+  background-color: #235347;
+  color: #8eb69b;
+  border: 1px solid #235347;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #163832;
+}

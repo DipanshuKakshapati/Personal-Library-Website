@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='book.css') }}" />
+    <title>Books</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Notes-Dark-Academia.jpeg') }}">
+  </head>
+  <body>
+    <h1>Books</h1>
+    <br><br>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Book Name</th>
+        <th>Author Name</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Status</th>
+      </tr>
+      {% for user in users %}
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.user_name }}</td>
+        <td>{{ user.book_name }}</td> 
+        <td>{{ user.author_name }}</td>
+        <td>{{ user.genre }}</td>
+        <td>{{ user.rating }} </td>
+        <td><a href="/delete/{{ user.id }}" class="btn btn-otline-danger btn-sm">Update</a> </td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Search Users</h2>
+    <form method="POST" action="/search">
+        <label for="name">User Name: </label>
+        <input type="text" id="name" autocomplete="off" name="user_name"><br><br>
+        <input type="submit" value="Search">
+    </form>
+  </body>
+</html>
+

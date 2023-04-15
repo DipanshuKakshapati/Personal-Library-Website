@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Login Page</title>
+    <link rel="shortcot icon" href="{{ url_for('static', filename='login.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Notes-Dark-Academia.jpeg') }}">
+  </head>
+  <body>
+    <div class = "login">
+        <form action="/login" method="post">
+          <label>User name:</label>
+          <input type="text" autocomplete="off" name="username"/>
+          <label>Password:<br /></label>
+          <input type="password" name="password" /><br /><br />
+          <input type="submit" value="Login" /><br />
+        </form>
+    </div>
+    <h1>{{ msg }}</h1>
+  </body>
+</html>
